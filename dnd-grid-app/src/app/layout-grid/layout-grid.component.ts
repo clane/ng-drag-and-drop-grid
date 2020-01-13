@@ -52,19 +52,15 @@ export class LayoutGridComponent implements OnInit {
     if(event.keyCode === 39){//right arrow
       if(cellNumber === 1){
         this.cell2.nativeElement.focus();
-        this.renderer.appendChild(this.cell2.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 2){
         this.cell3.nativeElement.focus();
-        this.renderer.appendChild(this.cell3.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 3){
         this.cell4.nativeElement.focus();
-        this.renderer.appendChild(this.cell4.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 4){
         this.cell1.nativeElement.focus();//cycling behavior
-        this.renderer.appendChild(this.cell1.nativeElement, this.dragObj.nativeElement);
       }
      
     }
@@ -72,19 +68,15 @@ export class LayoutGridComponent implements OnInit {
     if(event.keyCode === 37 ){//left arrow
       if(cellNumber === 1){
         this.cell4.nativeElement.focus();//cycling behavior
-        this.renderer.appendChild(this.cell4.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 2){
         this.cell1.nativeElement.focus();
-        this.renderer.appendChild(this.cell1.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 3){
         this.cell2.nativeElement.focus();
-        this.renderer.appendChild(this.cell2.nativeElement, this.dragObj.nativeElement);
       }
       if(cellNumber === 4){
         this.cell3.nativeElement.focus();
-        this.renderer.appendChild(this.cell3.nativeElement, this.dragObj.nativeElement);
       }
       
     } 
