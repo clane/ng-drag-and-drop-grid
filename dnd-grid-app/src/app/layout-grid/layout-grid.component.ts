@@ -30,6 +30,24 @@ export class LayoutGridComponent implements OnInit {
     
   }
 
+
+  allowDrop($event) {
+    $event.preventDefault();
+  }
+
+  drag($event) {
+    $event.dataTransfer.setData("text", $event.target.id);
+  }
+
+  drop($event) {
+    $event.preventDefault();
+    var data = $event.dataTransfer.getData("text");
+    $event.target.appendChild(document.getElementById(data));
+  }
+  
+
+  
+
   handleKeydownOnGridcells(event, cellNumber: number){
     if(event.keyCode === 39){//right arrow
       if(cellNumber === 1){
