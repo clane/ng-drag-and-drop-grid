@@ -9,7 +9,7 @@ export class LayoutGridComponent implements OnInit {
 
   constructor(private renderer: Renderer2 ) {}
 
-  @ViewChild('cell1') cell1:ElementRef;//ignore syntax highlighting for now, this works
+  @ViewChild('cell1', {static:true }) cell1:ElementRef;
  
 
   ngOnInit() {
