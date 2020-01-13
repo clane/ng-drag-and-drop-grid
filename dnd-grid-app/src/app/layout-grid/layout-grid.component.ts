@@ -13,7 +13,7 @@ export class LayoutGridComponent implements OnInit {
   @ViewChild('cell2', {static:true }) cell2:ElementRef;
   @ViewChild('cell3', {static:true }) cell3:ElementRef;
   @ViewChild('cell4', {static:true }) cell4:ElementRef;
-
+  @ViewChild('dragObj', {static:true }) dragObj:ElementRef;
 
   currentCell: number;
   
@@ -83,5 +83,10 @@ export class LayoutGridComponent implements OnInit {
 
   }
 
+  moveCellContents(){
+    this.renderer.appendChild(this.cell4.nativeElement, this.dragObj.nativeElement);
+
+
+  }
 
 }
