@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, Renderer2, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-layout-grid',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutGridComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer: Renderer2 ) {}
+
+  @ViewChild('cell1') cell1:ElementRef;//ignore syntax highlighting for now, this works
+ 
 
   ngOnInit() {
+
+   
+    console.log('test');
+    console.log(this.cell1);
+    console.log(this.cell1.nativeElement);
+    this.cell1.nativeElement.focus();
+    
   }
+
 
 }
