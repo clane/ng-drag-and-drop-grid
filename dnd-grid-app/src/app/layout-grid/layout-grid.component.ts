@@ -26,13 +26,20 @@ export class LayoutGridComponent implements OnInit {
     
   }
 
-  handleKeydownOnGridcells(event, tabNumber: number){
+  handleKeydownOnGridcells(event, cellNumber: number){
     if(event.keyCode === 39){//right arrow
-      //First tab
-      if(tabNumber === 1){
+      if(cellNumber === 1){
         this.cell2.nativeElement.focus();
       }
+     
     }
+
+    if(event.keyCode === 37 ){//left arrow
+      if(cellNumber === 2){
+        this.cell1.nativeElement.focus();
+      }
+      
+    } 
 
   }
 
