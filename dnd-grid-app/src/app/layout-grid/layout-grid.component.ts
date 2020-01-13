@@ -11,6 +11,10 @@ export class LayoutGridComponent implements OnInit {
 
   @ViewChild('cell1', {static:true }) cell1:ElementRef;
   @ViewChild('cell2', {static:true }) cell2:ElementRef;
+  @ViewChild('cell3', {static:true }) cell3:ElementRef;
+  @ViewChild('cell4', {static:true }) cell4:ElementRef;
+
+
   currentCell: number;
   
  
@@ -31,12 +35,30 @@ export class LayoutGridComponent implements OnInit {
       if(cellNumber === 1){
         this.cell2.nativeElement.focus();
       }
+      if(cellNumber === 2){
+        this.cell3.nativeElement.focus();
+      }
+      if(cellNumber === 3){
+        this.cell4.nativeElement.focus();
+      }
+      if(cellNumber === 4){
+        this.cell1.nativeElement.focus();//cycling behavior
+      }
      
     }
 
     if(event.keyCode === 37 ){//left arrow
+      if(cellNumber === 1){
+        this.cell4.nativeElement.focus();//cycling behavior
+      }
       if(cellNumber === 2){
         this.cell1.nativeElement.focus();
+      }
+      if(cellNumber === 3){
+        this.cell2.nativeElement.focus();
+      }
+      if(cellNumber === 4){
+        this.cell3.nativeElement.focus();
       }
       
     } 
