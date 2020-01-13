@@ -10,16 +10,30 @@ export class LayoutGridComponent implements OnInit {
   constructor(private renderer: Renderer2 ) {}
 
   @ViewChild('cell1', {static:true }) cell1:ElementRef;
+  @ViewChild('cell2', {static:true }) cell2:ElementRef;
+  currentCell: number;
+  
  
 
   ngOnInit() {
 
+    this.currentCell = 1; 
    
     console.log('test');
     console.log(this.cell1);
     console.log(this.cell1.nativeElement);
     this.cell1.nativeElement.focus();
     
+  }
+
+  handleKeydownOnGridcells(event, tabNumber: number){
+    if(event.keyCode === 39){//right arrow
+      //First tab
+      if(tabNumber === 1){
+        this.cell2.nativeElement.focus();
+      }
+    }
+
   }
 
 

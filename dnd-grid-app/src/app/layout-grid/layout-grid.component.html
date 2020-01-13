@@ -1,7 +1,7 @@
 <table role="grid">
   <tr>
-    <td #cell1 role="gridcell" tabindex="-1"></td>
-
+    <td #cell1 role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 1)"></td>
+    <td #cell2 role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 2)"></td>
   </tr>
 </table>
   
