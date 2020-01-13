@@ -1,7 +1,8 @@
 
 
 
-<div #dragObj id="dragObject" tabindex="-1" draggable="true" (dragstart)="drag($event)">
+<div #dragObj id="dragObject" tabindex="0" draggable="true" (dragstart)="drag($event)" (keydown)="
+handleKeydownOnDragObject()">
   Drag me
 </div>
 

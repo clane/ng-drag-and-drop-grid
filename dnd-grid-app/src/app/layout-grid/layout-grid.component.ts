@@ -15,18 +15,11 @@ export class LayoutGridComponent implements OnInit {
   @ViewChild('cell4', {static:true }) cell4:ElementRef;
   @ViewChild('dragObj', {static:true }) dragObj:ElementRef;
 
-  currentCell: number;
   
  
 
   ngOnInit() {
 
-    this.currentCell = 1; 
-   
-    console.log('test');
-    console.log(this.cell1);
-    console.log(this.cell1.nativeElement);
-    this.cell1.nativeElement.focus();
     
   }
 
@@ -81,6 +74,10 @@ export class LayoutGridComponent implements OnInit {
       
     } 
 
+  }
+
+  handleKeydownOnDragObject() { 
+    this.cell1.nativeElement.focus();
   }
 
 
