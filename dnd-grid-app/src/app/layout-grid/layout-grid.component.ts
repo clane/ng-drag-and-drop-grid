@@ -19,11 +19,13 @@ export class LayoutGridComponent implements OnInit {
   @ViewChild('cell8', {static:true }) cell8:ElementRef;
   @ViewChild('dragObj', {static:true }) dragObj:ElementRef;
 
-  
+  dragObjLabel:string;
+
  
 
   ngOnInit() {
 
+    this.dragObjLabel = "Hi I'm the drag object"; 
     
   }
 
@@ -49,6 +51,7 @@ export class LayoutGridComponent implements OnInit {
     if($event.keyCode === 39){//right arrow
       if(cellNumber === 1){
         this.cell2.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 2";
       }
       if(cellNumber === 2){
         this.cell3.nativeElement.focus();
