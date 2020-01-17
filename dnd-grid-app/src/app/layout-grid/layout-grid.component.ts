@@ -50,6 +50,7 @@ export class LayoutGridComponent implements OnInit {
   handleKeydownOnGridcells($event, cellNumber: number){
     if($event.keyCode === 39){//right arrow
       if(cellNumber === 1){
+        this.cell2.nativeElement.textContent = "dropped in cell 2";
         this.cell2.nativeElement.focus();
         
       }
