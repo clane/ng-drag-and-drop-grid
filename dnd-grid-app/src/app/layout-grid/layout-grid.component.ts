@@ -171,10 +171,7 @@ export class LayoutGridComponent implements OnInit {
   }
 
   updateDropStatus(cellNumber: number){
-    console.log('test');
-    console.log(cellNumber);
-    this.statusRegion.nativeElement.innerHTML = "sdfjaf";
-    this.statusRegion.nativeElement.textContent = "xxxxxxx";
+    this.statusRegion.nativeElement.textContent = "dropped in drop zone " + cellNumber;
   }
 
 
