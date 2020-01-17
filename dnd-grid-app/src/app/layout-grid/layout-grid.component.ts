@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef, Renderer2, OnInit } from '@angular/core';
+import { throwError } from 'rxjs';
 
 @Component({
   selector: 'app-layout-grid',
@@ -172,7 +173,8 @@ export class LayoutGridComponent implements OnInit {
   updateDropStatus(cellNumber: number){
     console.log('test');
     console.log(cellNumber);
-
+    this.statusRegion.nativeElement.innerHTML = "sdfjaf";
+    this.statusRegion.nativeElement.textContent = "xxxxxxx";
   }
 
 
