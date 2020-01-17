@@ -1,16 +1,17 @@
 
 
 
-<div #dragObj id="dragObject" tabindex="0" draggable="true" (dragstart)="drag($event)" (keydown)="
-handleKeydownOnDragObject()" (focus)="announceDraggable()" >
-  <span aria-hidden="true">
-    {{dragObjLabel}}
-  </span>
-</div>
+
 
 <table role="grid">
   <tr>
-    <td #cell1 id="cell1" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 1)" (focus)="moveContentWithFocus(1)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 1</span></td>
+    <td #cell1 id="cell1" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 1)" (focus)="moveContentWithFocus(1)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 1</span>
+      <div #dragObj id="dragObject" draggable="true" (dragstart)="drag($event)" (keydown)="handleKeydownOnDragObject()">
+        <span aria-hidden="true">
+          {{dragObjLabel}}
+        </span>
+      </div>
+    </td>
     <td #cell2 id="cell2" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 2)" (focus)="moveContentWithFocus(2)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 2</span></td>
     <td #cell3 id="cell3" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 3)" (focus)="moveContentWithFocus(3)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 3</span></td>
     <td #cell4 id="cell4" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 4)" (focus)="moveContentWithFocus(4)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 4</span></td>
