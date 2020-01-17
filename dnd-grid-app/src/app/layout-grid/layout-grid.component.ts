@@ -56,38 +56,27 @@ export class LayoutGridComponent implements OnInit {
     if ($event.keyCode === 39) {//right arrow
       if (cellNumber === 1) {
         this.cell2.nativeElement.focus();
-       
-
       }
       if (cellNumber === 2) {
         this.cell3.nativeElement.focus();
-       
-
       }
       if (cellNumber === 3) {
         this.cell4.nativeElement.focus();
-
       }
       if (cellNumber === 4) {
         this.cell5.nativeElement.focus();
-
       }
-
       if (cellNumber === 5) {
         this.cell6.nativeElement.focus();
-
       }
       if (cellNumber === 6) {
         this.cell7.nativeElement.focus();
-
       }
       if (cellNumber === 7) {
         this.cell8.nativeElement.focus();
-
       }
       if (cellNumber === 8) {
         this.cell1.nativeElement.focus();//cycling behavior
-
       }
 
     }
@@ -95,38 +84,28 @@ export class LayoutGridComponent implements OnInit {
     if ($event.keyCode === 37) {//left arrow
       if (cellNumber === 1) {
         this.cell8.nativeElement.focus();//cycling behavior
-
       }
       if (cellNumber === 2) {
         this.cell1.nativeElement.focus();
-
       }
       if (cellNumber === 3) {
         this.cell2.nativeElement.focus();
-
       }
       if (cellNumber === 4) {
         this.cell3.nativeElement.focus();
-
       }
-
       if (cellNumber === 5) {
         this.cell4.nativeElement.focus();//cycling behavior
-
       }
       if (cellNumber === 6) {
         this.cell5.nativeElement.focus();
-
       }
       if (cellNumber === 7) {
         this.cell6.nativeElement.focus();
-
       }
       if (cellNumber === 8) {
         this.cell7.nativeElement.focus();
-
       }
-
     }
 
   }
