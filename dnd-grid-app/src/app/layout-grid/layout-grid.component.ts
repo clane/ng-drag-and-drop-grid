@@ -55,25 +55,32 @@ export class LayoutGridComponent implements OnInit {
       }
       if(cellNumber === 2){
         this.cell3.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 3";
       }
       if(cellNumber === 3){
         this.cell4.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 4";
       }
       if(cellNumber === 4){
         this.cell5.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 5";
       }
 
       if(cellNumber === 5){
         this.cell6.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 6";
       }
       if(cellNumber === 6){
         this.cell7.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 7";
       }
       if(cellNumber === 7){
         this.cell8.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 8";
       }
       if(cellNumber === 8){
         this.cell1.nativeElement.focus();//cycling behavior
+        this.dragObjLabel = "dropped in cell 1";
       }
      
     }
@@ -81,28 +88,36 @@ export class LayoutGridComponent implements OnInit {
     if($event.keyCode === 37 ){//left arrow
       if(cellNumber === 1){
         this.cell8.nativeElement.focus();//cycling behavior
+        this.dragObjLabel = "dropped in cell 8";
       }
       if(cellNumber === 2){
         this.cell1.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 1";
       }
       if(cellNumber === 3){
         this.cell2.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 2";
       }
       if(cellNumber === 4){
         this.cell3.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 3";
       }
 
       if(cellNumber === 5){
         this.cell4.nativeElement.focus();//cycling behavior
+        this.dragObjLabel = "dropped in cell 4";
       }
       if(cellNumber === 6){
         this.cell5.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 5";
       }
       if(cellNumber === 7){
         this.cell6.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 6";
       }
       if(cellNumber === 8){
         this.cell7.nativeElement.focus();
+        this.dragObjLabel = "dropped in cell 7";
       }
       
     } 
