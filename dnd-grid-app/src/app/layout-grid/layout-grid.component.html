@@ -3,7 +3,9 @@
 
 <div #dragObj id="dragObject" tabindex="0" draggable="true" (dragstart)="drag($event)" (keydown)="
 handleKeydownOnDragObject()">
-  {{dragObjLabel}}
+  <span aria-hidden="true">
+    {{dragObjLabel}}
+  </span>
 </div>
 
 <table role="grid">
