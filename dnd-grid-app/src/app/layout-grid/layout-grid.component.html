@@ -2,7 +2,7 @@
 
 
 <div #dragObj id="dragObject" tabindex="0" draggable="true" (dragstart)="drag($event)" (keydown)="
-handleKeydownOnDragObject()">
+handleKeydownOnDragObject()" (focus)="announceDraggable()" >
   <span aria-hidden="true">
     {{dragObjLabel}}
   </span>

@@ -170,6 +170,10 @@ export class LayoutGridComponent implements OnInit {
 
   }
 
+  announceDraggable(){
+    this.statusRegion.nativeElement.textContent = "dragging has started";
+  } 
+
   updateDropStatus(cellNumber: number){
     this.statusRegion.nativeElement.textContent = "dropped in drop zone " + cellNumber;
   }
