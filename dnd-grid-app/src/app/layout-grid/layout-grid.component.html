@@ -5,10 +5,10 @@
 
 <table role="grid">
   <tr>
-    <td #cell1 id="cell1" role="gridcell" tabindex="-1" (keydown)="handleKeydownOnGridcells($event, 1)" (focus)="moveContentWithFocus(1)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 1</span>
+    <td #cell1 id="cell1" role="gridcell" tabindex="0" (keydown)="handleKeydownOnGridcells($event, 1)" (focus)="moveContentWithFocus(1)" (drop)="drop($event)" (dragover)="allowDrop($event)"><span aria-hidden="true">dropzone 1</span>
       <div #dragObj id="dragObject" draggable="true" (dragstart)="drag($event)" (keydown)="handleKeydownOnDragObject()">
         <span aria-hidden="true">
-          {{dragObjLabel}}
+          Drag Object
         </span>
       </div>
     </td>

@@ -29,8 +29,8 @@ export class LayoutGridComponent implements OnInit {
 
   ngOnInit() {
 
-    this.dragObjLabel = "drag object";
-    this.cell1.nativeElement.focus(); 
+ 
+   
 
   }
 
